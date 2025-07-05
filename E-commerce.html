@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Commerce</title>
+        <style>
+          *{
+            padding:0%;
+            margin:0%;   
+          }s
+            header{
+                padding:10px;
+                margin:10px;
+            }
+            nav1{
+              height: 20px; ;
+              width: 100%;
+              display: flex;
+              z-index: 1000;  
+            }
+            a{
+              text-decoration: none;
+              padding: 10px;
+              margin: 10px;
+              color: black;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: small;
+            }
+            .div1{
+              height: 70px; ;
+              width: 100%;
+              display: flex;
+              justify-content: flex-start;
+              background-color: lightgray;
+              align-items:flex-start;
+              position: fixed;
+              top: 0%;
+              right: 0%;
+              z-index: 1000;
+            }
+            .div1 a:hover{
+              background: yellow;
+            }
+            .div2 a:hover{
+              background: yellow;
+            }
+            .h{
+              padding: 300px 70px;
+              background:linear-gradient(to right,lightgray,gray);
+              margin: 0%;
+              width:150%;
+              height: 200px;
+            }
+            .i{
+              position: relative;
+              left: 300px;
+              bottom: 200px;
+            }
+            .d{
+              position: relative;
+              left: 150px;
+              bottom: 600px;
+            }
+            .spaces{
+              width: 80px;
+              height: 40px;
+              background-color: black;
+              color:white;
+              border-radius: 30px;
+              margin:10px -10px;
+              position: relative;
+              bottom: 570px;
+            }
+            .div2{
+              height: 70px; ;
+              width: 800px;
+              display: flex;
+              justify-content: flex-end;
+              background-color: gray;
+              align-items:flex-start;
+              position: fixed;
+              top: 0%;
+              right: 0%;
+              z-index: 1001;
+            }
+            .space{
+              padding:10px;
+            }
+            .div3{
+              text-align:center;
+              background-color:aliceblue;
+              height:1400px;
+              width: 150%;
+              margin: 0px;
+            }
+            .nav{
+              display:flex;
+              justify-content: center;
+              padding:30px; 
+            }
+            .active:hover{
+              color:red;
+            }
+            .active{
+              color:blue;
+            }
+            .main1{
+              display: grid;
+              grid-template-columns: repeat(3,1fr);
+              gap: 30px;
+              padding:50px;
+              margin: 10px;
+            }
+            .sale{
+              display:flex; 
+              position: absolute;
+              bottom: -480px;
+              left: 400px;
+              z-index: 1000;
+            }
+            .sale1{
+              display: flex;
+              position: absolute;
+              bottom:-480px;
+              left: 1120px;
+            z-index:1000;
+            }
+            .sale2{
+              display:flex; 
+              position: absolute;
+              bottom: -950px;
+              left: 1120px;
+            }
+            .bimg{
+              margin: 0%;
+            }
+            .bimg2{
+              width: 100%;
+              height: 300px;
+              margin: 0%;
+              padding:30px 0 0 0 ;
+            }
+            .footer{
+              background-color: #ddd;
+              display: flex;
+              justify-content: space-between;
+              gap: 5.5rem;
+            }
+            .foot{
+              padding: 40px;
+              margin: 30px;
+              display: flex;
+            }
+            .p2{
+                padding: 30px;
+                margin: 40px;
+                display: flex;
+                position: absolute;
+                top: 2550px;
+            }
+            .foot1{
+              padding: 40px;
+              margin: 30px 30px 0 0;
+              display: grid;
+              grid-template-columns: repeat(4 ,1fr);
+              grid-auto-flow: column;
+            
+            }
+            .foot1 ul{
+                list-style-type: none;
+                list-style-position: inside;
+                white-space: nowrap;
+                text-align: start;
+            }
+            .top-categories{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+                padding: 10px;
+                margin: 10px;
+                position: absolute;
+                bottom: -1820px;
+                left: 75%;
+            }
+            .main2:hover{
+                transform: scale(1.1);
+            }
+            .main3:hover{
+                transform: scale(1.1);
+            }
+            .main4:hover{
+                transform: scale(1.1);
+            }
+            .main6:hover{
+                transform: scale(1.1);
+            }
+            .main7:hover{
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        <nav1>
+            <div class="div1">
+            <a href="E-commerce.html"><img src="https://lms.achieversit.com/assets/images/logo.png" alt="logo" width="100px"/></a>
+            <a href="shop.html" class="shop">SHOP</a>
+            <a href="design-ideas.html" class="design-ideas">DESIGN IDEAS</a>
+            <a href="stories.html" class="stories">STORIES</a>
+            <a href="faqs.html" class="faqs">FAQS</a>
+            <a href="contct-us.html" class="CONTACT US">CONTACT US</a>
+            <a href="SALE.html" class="SALE">SALE</a>
+            </div>
+          <div class="div2"> 
+            <a href="SEARCH.html" class="SEARCH">SEARCH</a>
+            <a href="SIGN IN.html" class="SIGN">SIGN IN</a>
+            <a><img src="../E-commerce Images/cart.png" alt="contact"></a>
+            </div>
+          </nav1>
+          </header>
+            <header class="h">
+              <h1>Swoon lounge Chair</h1>
+              <p class="space">By : Sellemore</p>
+              <h5 class="space">Rp 2.700.000</h5>
+              <a><button class="spaces" id="BUY">BUY</button></a>
+              <a class="i"><img src="../irfan/swoon.png" alt="swoon"></a>
+              <a class="d"><img src="../E-commerce Images/discount25.png" alt="discount25"></a>
+              </header>
+              <header class="div3">
+                <h2>Create the Home You've Always Wanted</h2>
+              <a> <img src="../E-commerce Images/welders.png" alt="welders" width="50px" height="50px">Welder</a>
+              <a> <img src="../E-commerce Images/movers.png" alt="movers" width="50px" height="50px"></a>
+              <a> <img src="../E-commerce Images/arsitek_icon.png" alt="arsitek_icon" width="50px" height="50px"></a>
+              <a> <img src="../E-commerce Images/interior_designer_icon.png" alt="interior_designer_icon" width="50px" height="50px"></a>
+              <a> <img src="../E-commerce Images/contractors_icon.png" alt="contractors_icon" width="50px" height="50px"></a>
+              <div class="nav">
+                <div><a href="popular.html" class="active">POPULAR</a></div>
+                <div><a href="new products.html">NEW PRODUCTS</a></div>
+                <div><a href="deal.html">DEAL</a></div>
+                </div>
+              
+
+                <div class="main1">
+                            <div class="main2" style="background-color: #fff; width: 400px;">
+                            
+                            <span>  <img src="../E-commerce Images/stool1.jpg" alt="stool1">
+                            <p>Rp 1.000.000</p>
+                              <p>Vee Bar Stool,black brown</p>
+                              <a href="#" style="color: red;">Shop  Bar Stools</a>
+                           
+                            </div>
+
+                            <div class="main3" style="background-color: #fff; width: 400px;">
+                              <span>  <img src="../E-commerce Images/table.jpg" alt="table">
+                                <p>Rp 1.000.000</p>
+                                <p>Vee Bar Stool,black brown</p>
+                                <a href="#" style="color: red;">Shop  Bar Stools</a>
+                                
+                              </div>
+                                <div class="main4" style="background-color: #fff; width: 400px;">
+                                <span>  <img src="../E-commerce Images/vintage.jpg" alt="vintage">  
+                                  <p>Rp 1.000.000</p>
+                                  <p>Vee Bar Stool,black brown</p>
+                                  <a href="#" style="color: red;">Shop  Bar Stools</a></span><br> <br>
+                                </div>
+                              <div class="main6" style="background-color: #fff; width: 400px;">
+                              <span>  <img src="../E-commerce Images/side_table.jpg" alt="side_table">
+                              <p>Rp 1.000.000</p>
+                                <p>Vee Bar Stool,black brown</p>
+                                <a style="color: red;">Shop  Bar Stools</a></span>
+                              </div>
+      
+                              <div class="main7" style="background-color: #fff; width: 400px;">
+                                <span>  <img src="../E-commerce Images/table.png" alt="table" width="400px">
+                                  <p>Rp 1.000.000</p>
+                                  <p>Vee Bar Stool,black brown</p>
+                                  <a href="#" style="color: red;">Shop  Bar Stools</a>
+                                 
+                                </div>
+                                </div>
+              
+                        <div class="bimg">
+                          <img class="bimg2" src="../E-commerce Images/banner_full_width_mobile.jpg" alt="banner_full_width_mobile">
+                        </div>
+
+                        <div class="footer">
+                          <section class="top-categories">
+                              <h2>Top Categories</h2>
+                          </section>
+                          <div class="foot">
+                          <img src="https://lms.achieversit.com/assets/images/logo.png" alt="logo" width="100px" height="50px"/>
+                          <p>Furnituure.id server the needs of the design, entertainment and arts community by providing public and private conference spaces for lectures, meeting, special events, screening, exebibitions and receptions.</p>
+                          </div>
+                          <p class="p2">@2017  Furniture.id All rights reserved</p>
+                          <div class="foot1">
+                          <ul>
+                            <li>Dining Room</li>
+                            <li>Decorations</li>
+                            <li>Renovations</li>
+                            <li>Bed Room</li>
+                            <li>Furniture</li>
+                            <li>Bath Room</li>
+                            <li>Lighting</li>
+                          </ul>
+                        </div>
+        
+                        <div class="foot1">
+                          <ul>
+                          <li>Architects</li>
+                          <li>Interior Designers</li>
+                          <li>Contractors</li>
+                          <li>Home Builders</li>
+                          <li>Landscape Designers</li>
+                          <li>Furniture Repairs</li>
+                          <li>Air Conditioning</li>
+                        </ul>
+                      </div>
+        
+                      <div class="foot1">
+                        <ul>
+                          <li>Plumbers</li>
+                          <li>Electricians</li>
+                          <li>Welders</li>
+                          <li>Movers</li>
+                          <li>Carpet Cleaners</li>
+                          <li>Glass Services</li>
+                          <li>Canopy Services</li>
+                        </ul>
+                      </div>
+                      </div>
+        </header>
+    </body>
+    </html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-E-Commerce</title>
+
+    <style>
+        *{
+          padding:0%;
+          margin:0%;   
+        }
+          header{
+              padding:10px;
+              margin:0%;
+          }
+          .section{
+            background-color :aliceblue;
+            width:100%;
+            height:550px;
+        }
+          nav1{
+            height: 20px; ;
+            width: 100%;
+            display: flex;
+          }
+        .div1{
+          height: 70px;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          background-color: lightgray;
+          align-items:flex-start;
+          position: fixed;
+          top: 0%;
+          right: 0%;
+          z-index: 1000;
+        }
+        .div1 a:hover{
+          background: yellow;
+        }
+        .div2 a:hover{
+          background: yellow;
+        }
+        .div2{
+          height: 70px; ;
+          width: 800px;
+          display: flex;
+          justify-content: flex-end;
+          background-color: gray;
+          align-items:flex-start;
+          position: fixed;
+          top: 0%;
+          right: 0%;
+        }
+        a{
+          text-decoration: none;
+          padding: 10px;
+          margin: 10px;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: small;
+        }
+        .furniture{
+          background-color :aliceblue;
+          width:100%;
+          height:1050px;
+          padding: 10px;
+          margin: 10px;
+        }
+        .shop{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 10px;
+            margin: 10px;
+        }
+        .Filter{
+            padding: 10px;
+            margin: 10px;
+        }
+        .color-groups{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items:flex-start;
+        }
+        .color-groups ul{
+            list-style: none;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            padding: 10px;
+            margin: 10px;
+        }
+        .color-groups ul li{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+        #red{
+            background-color:red ;
+        }
+        #black{
+            background-color: black;
+        }
+        #green{
+            background-color: green;
+        }
+        
+        #blue{
+            background-color:blue;
+        }
+        .color:hover{
+            box-shadow: 0 0 8px rgba (0, 0, 0, 0.3);
+        }
+        .main1 {
+          display: flex;
+          width:calc(100%);
+          padding: 20px;
+          gap: 20px;
+          position: absolute;
+          left: 300px;
+          top: 100px;
+   }
+   .main2 {
+          display: flex;
+          width:calc(100%);
+          padding: 20px;
+          gap: 20px;
+          position: absolute;
+          left: 300px;
+          top: 600px;
+   }
+.product-box {
+    background-color: #fff;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.product-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.product-box p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-box .product-name {
+    font-size: 16px;
+    color: #666;
+}
+.product-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color:black;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.product-box a:hover {
+    background-color: blue;
+}
+.footer{
+          background-color: #ddd;
+          display: flex;
+          justify-content: space-between;
+          gap: 5.5rem;
+        }
+        .foot{
+          padding: 40px;
+          margin: 30px;
+          display: flex;
+        }
+        .p2{
+            padding: 30px;
+            margin: 40px;
+            display: flex;
+            position: absolute;
+            bottom: -660px;
+        }
+        .foot1{
+          padding: 40px;
+          margin: 30px 30px 0 0;
+          display: grid;
+          grid-template-columns: repeat(4 ,1fr);
+          grid-auto-flow: column;
+        
+        }
+        .foot1 ul{
+             list-style-type: none;
+             list-style-position: inside;
+             white-space: nowrap;
+             text-align: start;
+        }
+        .top-categories{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 1110px;
+            left: 640px;
+        }
+        .a1{
+          display: flex;
+          position: absolute;
+          left:50px;
+        }
+        .a1:hover{
+          background: yellow;
+        }
+
+   </style>
+</head>
+<body>
+    
+    <section>
+        <header>
+            <nav1>
+                <div class="div1">
+                <a href="E-commerce.html"><img src="https://lms.achieversit.com/assets/images/logo.png" alt="logo" width="100px"/></a>
+                <a href="shop.html" class="SHOP">SHOP</a>
+                <a href="design-ideas.html" class="SHOP">DESIGN IDEAS</a>
+                <a href="stories.html" class="STORIES">STORIES</a>
+                <a href="faqs.html" class="FAQS">FAQS</a>
+                <a href="contct-us.html" class="CONTACT US">CONTACT US</a>
+                <a href="SALE.html" class="SALE">SALE</a>
+                </div>
+               <div class="div2"> 
+                <a href="SEARCH.html" class="SEARCH">SEARCH</a>
+                <a href="SIGN IN.html" class="SIGN">SIGN IN</a>
+                <a><img src="../E-commerce Images/cart.png" alt="contact"></a>
+                </div>
+            </nav1>
+         <div class="furniture">
+         <div class="all1">
+          <a href="all"class="shop">All</a>
+          <a href="all"class="shop">Furniture</a>
+          <a href="all"class="shop">Bedding</a>
+          <a href="all"class="shop">Lighting</a>
+          <a href="all"class="shop">Pillow & Decor</a>
+          <a href="all"class="shop">Wall Art & Mirror</a>
+          <a href="all"class="shop">Table Top</a>
+          <a href="all"class="shop">GlassWare</a>
+          <a href="all"class="shop">Rugs & Windows</a>
+          <a href="all"class="shop">Houseware</a>
+          <a href="all"class="shop">Holidays</a>
+          <a href="all"class="shop">Gift</a>
+          <a href="all"class="shop">Sale</a>
+          </div>
+          <div class="Filter">
+          <h1>Filter Product</h1> <br>
+          <label>
+          <input type="radio" name="Gender" value="Popular"/> Popular <br>
+             <input type="radio" name="Gender" value="Latest"/> Latest <br>
+             <input type="radio" name="Gender" value="A-Z"/> A-Z <br>
+             <input type="radio" name="Gender" value="Z-A"/> Z-A <br>
+             <input type="radio" name="Gender" value="Low to High"/> Low to High <br>
+             <input type="radio" name="Gender" value="High to Low"/> High to Low
+            </label>
+            </div>
+            <div class="color-groups">
+                <ul>
+                <li class="color-black" id="red"> </li>
+                <li class="color-black" id="black"> </li>
+                <li class="color-black" id="green"> </li>
+                <li class="color-black" id="blue"> </li>
+                <li class="color-black" id="red"> </li>
+                <li class="color-black" id="black"> </li>
+                <li class="color-black" id="green"> </li>
+                <li class="color-black" id="blue"> </li>
+                <li class="color-black" id="red"> </li>
+                <li class="color-black" id="black"> </li>
+                <li class="color-black" id="green"> </li>
+                <li class="color-black" id="blue"> </li>
+                <li class="color-black" id="red"> </li>
+                <li class="color-black" id="black"> </li>
+                <li class="color-black" id="green"> </li>
+                <li class="color-black" id="blue"> </li>
+                </ul>
+            </div>
+            <div class="a1"><a href="#">Filter</a></div> 
+            <br> <br> <br> <br> <br> <br> <br>
+            <div class="main1">
+              <div class="product-box">
+                  <img src="../E-commerce Images/stool1.jpg" alt="Vee Bar Stool">
+                  <p>Rp 1.000.000</p>
+                  <p class="product-name">Vee Bar Stool, black brown</p>
+                  <a href="#">Shop Bar Stools</a>
+              </div>
+              <div class="product-box">
+                  <img src="../E-commerce Images/table.jpg" alt="Vee Bar Stool">
+                  <p>Rp 1.000.000</p>
+                  <p class="product-name">Vee Bar Stool, black brown</p>
+                  <a href="#">Shop Bar Stools</a>
+              </div>
+              <div class="product-box">
+                  <img src="../E-commerce Images/vintage.jpg" alt="Vee Bar Stool">
+                  <p>Rp 1.000.000</p>
+                  <p class="product-name">Vee Bar Stool, black brown</p>
+                  <a href="#">Shop Bar Stools</a>
+              </div>
+    </div>
+    <div class="main2">
+      <div class="product-box">
+          <img src="../E-commerce Images/stool1.jpg" alt="Vee Bar Stool">
+          <p>Rp 1.000.000</p>
+          <p class="product-name">Vee Bar Stool, black brown</p>
+          <a href="#">Shop Bar Stools</a>
+      </div>
+      <div class="product-box">
+          <img src="../E-commerce Images/table.jpg" alt="Vee Bar Stool">
+          <p>Rp 1.000.000</p>
+          <p class="product-name">Vee Bar Stool, black brown</p>
+          <a href="#">Shop Bar Stools</a>
+      </div>
+      <div class="product-box">
+          <img src="../E-commerce Images/vintage.jpg" alt="Vee Bar Stool">
+          <p>Rp 1.000.000</p>
+          <p class="product-name">Vee Bar Stool, black brown</p>
+          <a href="#">Shop Bar Stools</a>
+      </div>
+</div>
+<div class="footer">
+  <section class="top-categories">
+      <h2>Top Categories</h2>
+  </section>
+   <div class="foot">
+   <img src="https://lms.achieversit.com/assets/images/logo.png" alt="logo" width="100px" height="50px"/>
+   <p>Furnituure.id server the needs of the design, entertainment and arts community by providing public and private conference spaces for lectures, meeting, special events, screening, exebibitions and receptions.</p>
+   </div>
+   <p class="p2">@2017  Furniture.id All rights reserved</p>
+   <div class="foot1">
+  <ul>
+    <li>Dining Room</li>
+    <li>Decorations</li>
+    <li>Renovations</li>
+    <li>Bed Room</li>
+    <li>Furniture</li>
+    <li>Bath Room</li>
+    <li>Lighting</li>
+  </ul>
+ </div>
+
+ <div class="foot1">
+  <ul>
+   <li>Architects</li>
+   <li>Interior Designers</li>
+   <li>Contractors</li>
+   <li>Home Builders</li>
+   <li>Landscape Designers</li>
+   <li>Furniture Repairs</li>
+   <li>Air Conditioning</li>
+ </ul>
+</div>
+
+<div class="foot1">
+ <ul>
+   <li>Plumbers</li>
+   <li>Electricians</li>
+   <li>Welders</li>
+   <li>Movers</li>
+   <li>Carpet Cleaners</li>
+   <li>Glass Services</li>
+   <li>Canopy Services</li>
+ </ul>
+</div>
+</div>
+        </header>
+    </section>
+
+</body>
+</html>

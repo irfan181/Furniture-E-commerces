@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQS-E-Commerce</title>
+    <style>
+        *{
+          padding:0%;
+          margin:0%;   
+          box-sizing: border-box;
+        }
+          header{
+              padding:10px;
+              margin:0%;
+          }
+          .secction{
+            background-color :aliceblue;
+            width:100%;
+            height:550px;
+        }
+          nav1{
+            height: 20px; ;
+            width: 100%;
+            display: flex;
+          }
+        .div1{
+          height: 70px;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          background-color: lightgray;
+          align-items:flex-start;
+          position: fixed;
+          top: 0%;
+          right: 0%;
+          z-index: 1000;
+        }
+        .div1 a:hover{
+          background: yellow;
+        }
+        .div2 a:hover{
+          background: yellow;
+        }
+        .div2{
+          height: 70px; ;
+          width: 800px;
+          display: flex;
+          justify-content: flex-end;
+          background-color: gray;
+          align-items:flex-start;
+          position: fixed;
+          top: 0%;
+          right: 0%;
+          z-index: 1001;
+        }
+        a{
+          text-decoration: none;
+          padding: 10px;
+          margin: 10px;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: small;
+        }
+        .p1{
+            padding: 50px;
+            margin: 50px;
+            display: flex;
+            position: absolute;
+            top: 450px;
+        }
+        .containerfqr{
+          background-color: white;
+          padding: 50px;
+          margin: 50px;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 10px;
+        }
+        .text1{
+          flex: 1;
+        }
+        .text2{
+          flex: 1;
+        }
+        .h1{
+          display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 580px;
+            left: 580px;
+        }
+        .h2{
+          display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 950px;
+            left: 600px;
+        }
+        .h3{
+          display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 1170px;
+            left: 600px;
+        }
+        .h4{
+          display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 2130px;
+            left: 600px;
+        }
+        .h5{
+          display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 2330px;
+            left: 550px;
+        }
+        .h6{
+          display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 2530px;
+            left: 550px;
+        }
+        .footer{
+          background-color: #ddd;
+          display: flex;
+          justify-content: space-between;
+          gap: 5.5rem;
+        }
+        .foot{
+          padding: 40px;
+          margin: 30px;
+          display: flex;
+        }
+        .p2{
+            padding: 30px;
+            margin: 40px;
+            display: flex;
+            position: absolute;
+            bottom: -2400px;
+        }
+        .foot1{
+          padding: 40px;
+          margin: 30px 30px 0 0;
+          display: grid;
+          grid-template-columns: repeat(4 ,1fr);
+          grid-auto-flow: column;
+        
+        }
+        .foot1 ul{
+             list-style-type: none;
+             list-style-position: inside;
+             white-space: nowrap;
+             text-align: start;
+        }
+        .top-categories{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 2870px;
+            left: 640px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <nav1>
+                <div class="div1">
+                <a href="E-commerce.html"><img src="https://lms.achieversit.com/assets/images/logo.png" alt="logo" width="100px"/></a>
+                <a href="shop.html" class="SHOP">SHOP</a>
+                <a href="design-ideas.html" class="DESIGN IDEAS">DESIGN IDEAS</a>
+                <a href="stories.html" class="STORIES">STORIES</a>
+                <a href="faqs.html" class="FAQS">FAQS</a>
+                <a href="contct-us.html" class="CONTACT US">CONTACT US</a>
+                <a href="SALE.html" class="SALE">SALE</a>
+                </div>
+               <div class="div2"> 
+                <a href="SEARCH.html" class="SEARCH">SEARCH</a>
+                <a href="SIGN IN.html" class="SIGN">SIGN IN</a>
+                <a><img src="../E-commerce Images/cart.png" alt="contact"></a>
+                </div>
+            </nav1>
+
+                <p class="p1">Home/Photos </p>
+
+                <div class="desimg">
+                  <div class="desimg1" style="background-color: #fff;">
+                  <img src="../E-commerce Images/birds-eye-1500w.jpg" alt="1" style="width: 100%; height: 500px;">
+                  </div>
+                
+                  <p class="p1">Home/Photos </p>
+                   
+                  <h1 class="h1">How Does kimi Works </h1>
+                  <h1 class="h2">Pricing</h1>
+                  <h1 class="h3">Ordering </h1>
+                  <h1 class="h4">Payments </h1>
+                  <h1 class="h5">Account Management</h1>
+                  <h1 class="h6">Suggestion & Feedback </h1>
+
+            <div class="containerfqr">
+                <div class="text1">
+                  <h2>Ke mana saja.himi dapat mengantar pesanan</h2><br>
+                  <p>Untuk fase pertama ini, kimi hanya dapat melayani pick up dan drop off di <br>
+                     area jakarta saja.Kimi berencana berekspansi dan bersiap-siaplah<br>
+                     untuk area yang akan kimi pilih setelah Jakarta.
+                  </p>     
+                  </div>
+                  <div class="text2">
+                <h2>Apakah kimi melayani pemesanan yang<br>
+                    jumlahnya sangat banyak (lebih dari 150 box) ?</h2><br>
+                <p>Kimi menyesuakan dengan kapasitas para chef chef depat merevisi<br>
+                   tanggal  dan jam yang dipesan untuk menyesuaikan kapasitas seperti<br>
+                   mempersiapkan bahan, alat, dan tenaga kerja yang mereka butuhkan<br>
+                   untuk mengerjakan order yang dipesan. Jika Anda ingin memessan dengan<br>
+                   jumlah yang sangat banyak, pastikan Anda memesannya jauh sebelum<br>
+                   hari H(min. H-5).
+                </p><br> <br> <br> <br>
+              </div> 
+              <div class="text1">
+                    <h2>Apakah harga yang dicantumkan pada setiap<br>
+                        produk sudah termasuk biaya pengiriman?</h2><br>
+                    <p>Belum.Sistem kimi akan menyesuaikan biaya pengiriman dari jarak dari<br>
+                       dapur Chef yang dipilih lokasi tujuan Anda pilih, yang<br>
+                       ditambahkan dengan total harga produk yang Anda pesan.
+                    </p><br>     
+              </div>
+                    <div class="text2">
+                  <h2>Berapa biaya pengiriman setiap memesan di<br>
+                      kimi?</h2><br>
+                  <p>Sistem kimi akan menyesuaikan biaya pengiriman dari jarak dari dapur<br>
+                     Chef yang dipilih dengan lokasi yang Anda pilih.
+                  </p><br> <br>
+                  <h2>Bagaimana biaya pengiriman jika saya memesan<br>
+                    dari 2 Chef berbeda?</h2><br>
+                <p>Sistem kimi akan tetap menghitung 2 transaki berbeda dengan 2 biaya<br>
+                   pengiriman yang berbeda.
+                </p><br> <br> <br> <br>
+                  </div>
+                  <div class="text1">
+                    <h2>Apa yang dimaksud dengan Minimum Order? </h2> <br>
+                    <p>Jumlah terkecil ditentukan oleh masin-masing Chef yang depat<br>
+                       dipesan Buyer, dan memiliki minimum order yang berbeda-<br>
+                       beda.
+                    </p><br> <br>
+                    <h2>Dapatkah saya memesan untuk pengantaran di <br>
+                        hari yang sama? </h2> <br>
+                    <p>Tidak. pesanan yang  hari ini (batas max, hingga tahap<br>
+                       pembayaran pukul 14.00), akan deterima keesokan hari dimana paling<br>
+                       pagi jam 09.30 dan pailing malam jam 18.30. Jika melewati pukul 14.00,<br>
+                       maka pemesanan akan diantar 2 hari berikutnya. Jika Chef merasa waktu<br>
+                       yang Anda pesan tidak cukup untuk melakukan persiapan bahan, alat,<br>
+                       dan tenanga kerja, Maka chef dapat merubah Request Delivery Time<br>
+                       pesanan Anda, dan Anda akan ternotifikasi mengenai perubahan tersebut.
+                    </p><br> <br>
+                    <h2>Bagaimana waktu pengantaran di kimi?</h2><br>
+                  <p>Anda dapat memilih Request Delivery Time yaitu pukul 09.30, 11.30, <br>
+                      13.30, 15.30, 18.30(WIB)<br>
+                  </p><br> <br>
+                  <h2>Apakah pengantaran dapat dilakukan diluar jam<br>
+                      yang tersedia?</h2><br>
+                  <p>Tidak. karena keterbatasan kapasitas maka kami menjadwalkan<br>
+                     pengiriman pukul 09.30, 11.30, 13.30, 15.30, 18.30(WIB) <br>
+                  </p><br> <br>
+                  <h2>Apa itu Pick Up Time and Delivery Time?</h2><br>
+                  <p>Pick Up Time adalah dimana Server (pengantara) tiba di lokasi<br>
+                     dapur Chef. Delivery Time adalah waktu/jam dimana order tiba di lokasi<br>
+                     Buyer YAng telah dipesan.
+                 </p><br> <br>
+                 <h2>Apa itu Pick Up Time and Delivery Time?</h2><br>
+                  <p>Pick Up Time adalah dimana Server (pengantara) tiba di lokasi<br>
+                     dapur Chef. Delivery Time adalah waktu/jam dimana order tiba di lokasi<br>
+                     Buyer YAng telah dipesan.
+                 </p><br> <br> <br> <br>           
+                    
+              </div>
+                    <div class="text2">
+                  <h2>Dapatkah saya memesan ke lebih dari Chef<br>
+                      berbeda secara bersamaan </h2><br>
+                  <p>YA, Sistem kami akan tetap menghitung 2 atau lebih transaki berbeda <br>
+                     dengan 2 atau lebih biaya pengiriman yang berbeda.<br>
+                  </p><br> <br>
+                  <h2>Dapatkah saya mengubah atau membatalkan <br>
+                      pesanan yang telah saya pesan?</h2><br>
+                <p>Ya, jika Anda status pemesanan Anda masih Open Request. Tidak,jika<br>
+                   Anda telah melakukan pembayaran.
+                </p><br> <br>
+                <h2>Bagaimana jika pesanan yang tiba tidak sesuai <br>
+                    dengan yang saya pesan?</h2><br>
+                 <p>Segara menghubungi kami di sini secepat mungkin yang Anda bisa<br>
+                    lakukan.
+                 </p><br> <br>
+                 <h2>Bagaimana jika saya memiliki alergi atau tidak<br>
+                     suka dengan bahan makanan/minuman tertentu?</h2><br>
+                 <p>Anda dapat menginformasikannya di Special Instruction dan Chef akan<br>
+                    memperhatikan secara special ketika mereka mempersiapkan order Anda.
+                 </p><br> <br>
+                 <h2>Dapatkah saya mengambil sendiri order yang<br>
+                     telah saya pesan?</h2><br>
+                  <p> Tidak. Kimi telah komitmen dan mengatur sistem kimi untuk mengantar<br>
+                      setiap order yang masuk melalui kimi.
+                  </p><br> <br>
+                  <h2>Bagaimana jika pesanan saya tidak kunjung<br>
+                      datang?</h2><br>
+                 <p> Segers menghubungi kami di sini secepat mungkin yang Anda bisa<br>
+                      lakukan.
+                 </p><br> <br> <br> <br>
+            </div>
+                <div class="text1">
+                  <h2>Apakah kimi menerima pembayaran tunai atau<br>
+                      COD (Cash On Delivery)?</h2><br>
+                  <p>Tidak. Untuk saat kimi hanya menerima pembayaran melalui (BCA) <br>
+                     Bank Transfer.
+                  </p><br> 
+            </div>
+                  <div class="text2">
+                <h2>Apakah kimi menerima pembayaran via kartu<br>
+                    kredit?</h2><br>
+                <p>Tidak. Untuk ini saat kimi hanya menerima pembayaran melalui (BCA) <br>
+                    Bank Transfer.
+                </p><br> <br> <br> <br>
+                  </div>
+                <div class="text1">
+                  <h2>Bagaimana saya membuat akun Buyer di kimi?</h2><br>
+                  <p>Anda dapat membuat akun dengan mengujungi backtokimi.com dan<br>
+                    menggunakan email Anda untuk sign up. Anda akan memasukkan nomor<br>
+                    handphone serta password, setelah itu Anda dapat langsung<br>
+                    menambahkan order serta menjadwalkan pengantaran yang Anda<br>
+                    inginkan.
+                  </p><br> 
+               </div>
+                  <div class="text2">
+                <h2>Dapatakh Buyer bergabung menjadi Chef kimi<br>
+                    juga?</h2><br>
+                <p>Ya. Anda langsung menghubungi kami melalui<br>
+                    alyssa.prabandari@backtokimi.com
+                </p><br> <br> <br> <br>
+                  </div>
+                <div class="text1">
+                  <h2>Bagaimana jika saya memiliki kritik dan saran?</h2><br>
+                  <p>Opini Anda sangat berharga bagi kami.Jika Anda memiliki kritik dan saran<br>
+                     silakan hubungi kami di sini. kami akan mengulas secara tepat<br>
+                     dan cepat.
+                  </p><br>   
+            </div>
+                  <div class="text2">
+                <h2>Dapatkah saya merekomendasikan Chef atau<br>
+                    Toko untuk kimi?</h2><br>
+                <p>Ya. Kami selalu untuk menambahkan Chef dan membuat favorit<br>
+                    Anda tersedia di kimi. Silakn hubungi kami di sini dengan Chef<br>
+                    rekomendasi Anda dan kami akan melakukan yang terbaik yang dapat<br>
+                    kammi lakukan untuk menjadikan itu kenyataan.
+                </p><br>
+                  </div>
+                 </div>
+                 
+                 <div class="footer">
+                  <section class="top-categories">
+                      <h2>Top Categories</h2>
+                  </section>
+                   <div class="foot">
+                   <img src="https://lms.achieversit.com/assets/images/logo.png" alt="logo" width="100px" height="50px"/>
+                   <p>Furnituure.id server the needs of the design, entertainment and arts community by providing public and private conference spaces for lectures, meeting, special events, screening, exebibitions and receptions.</p>
+                   </div>
+                   <p class="p2">@2017  Furniture.id All rights reserved</p>
+                   <div class="foot1">
+                  <ul>
+                    <li>Dining Room</li>
+                    <li>Decorations</li>
+                    <li>Renovations</li>
+                    <li>Bed Room</li>
+                    <li>Furniture</li>
+                    <li>Bath Room</li>
+                    <li>Lighting</li>
+                  </ul>
+                 </div>
+ 
+                 <div class="foot1">
+                  <ul>
+                   <li>Architects</li>
+                   <li>Interior Designers</li>
+                   <li>Contractors</li>
+                   <li>Home Builders</li>
+                   <li>Landscape Designers</li>
+                   <li>Furniture Repairs</li>
+                   <li>Air Conditioning</li>
+                 </ul>
+               </div>
+ 
+               <div class="foot1">
+                 <ul>
+                   <li>Plumbers</li>
+                   <li>Electricians</li>
+                   <li>Welders</li>
+                   <li>Movers</li>
+                   <li>Carpet Cleaners</li>
+                   <li>Glass Services</li>
+                   <li>Canopy Services</li>
+                 </ul>
+               </div>
+                </div>
+        </header>
+    </section>
+    </body>
+</html>
